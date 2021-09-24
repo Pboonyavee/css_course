@@ -4,7 +4,11 @@ module.exports = {
   theme: { 
     debugScreens: {
        position: ['bottom', 'left']},
-    extend: {},
+    extend: {
+      fontFamily: {
+        headline:['Oswald']
+      }
+    },
   },
   variants: {
     extend: {},
