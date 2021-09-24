@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class='bg-gray-800 debug-screens'>
+<body class= 'bg-maincolor debug-screens'>
     <!-- <H2>Hello world 🌎</H2>
     
     <p class="class1" id="Hi"> ✋ Hi I am paragarph</p>
@@ -45,32 +45,32 @@
             </div>
         </section>
 
-        <section class= "grid grid-cols-2 gap-4 mt-10 " id="image_services">
+        <section class= "grid grid-cols-2 gap-10 mt-10 " id="image_services">
             <!-- 2️⃣ picture-->
-            <div id="image">
+            <div class="ml-auto " id="image">
                 <img src="images/tom.jpg" alt="Tom Gonzales Online Training">
             </div>
 
             <!--3️⃣ Service -->
             <div id="services">
                 <h3>I offer you: </h3>
-                <ul>
-                    <li>Lessons via Skype and you can record all session and watch them again later.</li>
-                    <li>Holistic full body training</li>
-                    <li>Training without equipment</li>
-                    <li>Pain reduction</li>
-                    <li>Tailored nutrition plans</li>
+                <ul class="ml-6 list-disc">
+                    <li class="mb-2 text-lg">Lessons via Skype and you can record all session and watch them again later.</li>
+                    <li class="mb-2 text-lg">Holistic full body training</li>
+                    <li class="mb-2 text-lg">Training without equipment</li>
+                    <li class="mb-2 text-lg">Pain reduction</li>
+                    <li class="mb-2 text-lg">Tailored nutrition plans</li>
                 </ul>
-                <h3>My qualification: </h3>
-                <ul>
-                    <li>Certified nutritionist</li>
-                    <li>Certified fitness trainer</li>
-                    <li>5 years of experience in 1:1 training</li>
+                <h3 class="mt-10">My qualification: </h3>
+                <ul class="ml-6 list-disc">
+                    <li class="mb-2 text-lg">Certified nutritionist</li>
+                    <li class="mb-2 text-lg">Certified fitness trainer</li>
+                    <li class="mb-2 text-lg">5 years of experience in 1:1 training</li>
                 </ul>
             </div>
         </section>
 
-        <section  class= "mt-10"id="price_payment"">
+        <section  class= "mt-10 " id="price_payment"">
             <!--4️⃣ prices and payment-->
             <div class="w-8/12 mx-auto ">
                 <h2>Prices and payment</h2>
@@ -81,12 +81,16 @@
             </div>
         </section>
 
-        <section class="mt-4" id="contact">
+        <section class="mt-10 mb-24" id="contact">
             <!--5️⃣ Contact-->
             <div class="grid w-8/12 grid-cols-2 gap-4 mx-auto">
                 <div id="email">
                     <p>Your message: </p>
-                    <a href="mailto:markusgonzales@gmail.com">Send an email</a>
+                    <a class="flex items-center px-6 py-2 text-white rounded shadow-sm focus:ring-2 focus:ring-blue-200 w-max bg-maincolor hover:bg-gray-900 hover:shadow-none" href="#">
+                        
+                        <svg class="h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                        
+                        Send an email</a>
                 </div>
                 <div id="whats_app_telefon">
                     <p>Whats App: </p>
