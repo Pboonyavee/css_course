@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍯 Mini project</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <body class= 'bg-maincolor debug-screens'>
@@ -35,17 +36,20 @@
         <li class="bg-yellow-200"> 👀 text 3</li>
     </ul>-->
 
-    <div class="container min-h-screen p-2 mx-auto bg-gray-50">
+    <div class="container min-h-screen p-4 mx-auto bg-gray-50">
 
         <section id="header">
             <!-- 1️⃣ page header-->
             <div class="text-center ">
-                <h1 class="">Tom Gonzales home training <br> I'll got you in shape!</h1>
-                <h2>Muscle building ・Functional training ・ Nutritional advice </h2>
+                <h1 class="leading-relaxed">Tom Gonzales home training<br>
+                    <span class="​text-indigo-900 italic text-4xl sm:text-5xl lg:text-7xl opacity-80​"> ​<q>​&nbsp;I'll get you in shape!&nbsp;​</q>
+                    </span>
+                    </h1>
+                <h2>Muscle building ・Functional training ・<br class="sm:hidden"> Nutritional advice </h2>
             </div>
         </section>
 
-        <section class= "grid mt-10 md:gap-10 md:grid-cols-2 " id="image_services">
+        <section class= "grid mx-auto mt-10 md:gap-10 md:grid-cols-2 lg:w-9/12" id="image_services">
             <!-- 2️⃣ picture-->
             <div class="m-auto " id="image">
                 <img src="images/tom.jpg" alt="Tom Gonzales Online Training">
@@ -53,7 +57,7 @@
 
             <!--3️⃣ Service -->
             <div id="services" class="m-4 md:ml-10 " >
-                <h3>I offer you: </h3>
+                <h3>I offer you </h3>
                 <ul class="ml-6 list-disc">
                     <li class="mb-2 text-lg">Lessons via Skype and you can record all session and watch them again later.</li>
                     <li class="mb-2 text-lg">Holistic full body training</li>
@@ -61,7 +65,7 @@
                     <li class="mb-2 text-lg">Pain reduction</li>
                     <li class="mb-2 text-lg">Tailored nutrition plans</li>
                 </ul>
-                <h3 class="mt-10">My qualification: </h3>
+                <h3 class="mt-10">My qualification </h3>
                 <ul class="ml-6 list-disc">
                     <li class="mb-2 text-lg">Certified nutritionist</li>
                     <li class="mb-2 text-lg">Certified fitness trainer</li>
@@ -72,20 +76,20 @@
 
         <section  class= "mt-2 md:mt-10 " id="price_payment"">
             <!--4️⃣ prices and payment-->
-            <div class="w-8/12 ml-4 md:mx-auto ">
+            <div class="ml-4 mr-4 lg:w-8/12 xl:w-7/12 md:mx-auto ">
                 <h2>Prices and payment</h2>
                 <p>My most important goal is that you get ahead with your goals.</p>
-                <p>In a free opening session we will disscuss what you want to achieve and how much you can or
+                <p class="text-justify ">In a free opening session we will disscuss what you want to achieve and how much you can or
                     want to spend. Then we are guaranteed to find a solution that suits you.
                 </p>
             </div>
-        </section>
+      
 
         <section class="mt-10 mb-10" id="contact">
             <!--5️⃣ Contact-->
-            <div class="grid w-8/12 grid-cols-2 gap-4 mx-auto">
+            <div class="flex justify-around mx-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:mx-auto lg:w-8/12 xl:flex xl:justify-around">
                 <div id="email">
-                    <p>Your message: </p>
+                    <p>Your message </p>
                     <a class="flex items-center px-6 py-2 text-white rounded shadow-sm focus:ring-2 focus:ring-blue-200 w-max bg-maincolor hover:bg-gray-900 hover:shadow-none" href="#">
                         
                         <svg class="h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
@@ -93,7 +97,7 @@
                         Send an email</a>
                 </div>
                 <div id="whats_app_telefon">
-                    <p>Whats App: </p>
+                    <p>Whats App </p>
                     1 222 444 44 33
                 </div>
             </div>
