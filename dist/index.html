@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html x-data="{ dark: false }" x-bind:class="dark ? 'dark' : '' " lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
-<body class= 'bg-maincolor debug-screens'>
+<body class= 'bg-maincolor dark:bg-none debug-screens '>
     <!-- <H2>Hello world 🌎</H2>
     
     <p class="class1" id="Hi"> ✋ Hi I am paragarph</p>
@@ -36,13 +35,14 @@
         <li class="bg-yellow-200"> 👀 text 3</li>
     </ul>-->
 
-    <div class="container min-h-screen p-4 mx-auto bg-gray-50">
+    <div class="container min-h-screen p-4 mx-auto bg-gray-50 dark:bg-gray-900 ">
 
         <section id="header">
             <!-- 1️⃣ page header-->
+            <button @click="dark = !dark" class="p-2 bg-green-100 rounded">Toggle dark mode</button>
             <div class="text-center ">
-                <h1 class="leading-relaxed">Tom Gonzales home training<br>
-                    <span class="​text-indigo-900 italic text-4xl sm:text-5xl lg:text-7xl opacity-80​"> ​<q>​&nbsp;I'll get you in shape!&nbsp;​</q>
+                <h1 class="leading-relaxed ">Tom Gonzales home training<br>
+                    <span class="​text-indigo-900 italic text-4xl sm:text-5xl lg:text-7xl opacity-80​ dark:text-green-400"> ​<q>​&nbsp;I'll get you in shape!&nbsp;​</q>
                     </span>
                     </h1>
                 <h2>Muscle building ・Functional training ・<br class="sm:hidden"> Nutritional advice </h2>
@@ -90,7 +90,7 @@
             <div class="flex justify-around mx-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:mx-auto lg:w-8/12 xl:flex xl:justify-around">
                 <div id="email">
                     <p>Your message </p>
-                    <a class="flex items-center px-6 py-2 text-white rounded shadow-sm focus:ring-2 focus:ring-blue-200 w-max bg-maincolor hover:bg-gray-900 hover:shadow-none" href="#">
+                    <a class="flex items-center px-6 py-2 text-white rounded shadow-sm focus:ring-2 focus:ring-blue-200 w-max bg-maincolor dark:bg-blue-700 dark:hover:bg-blue-300 dark:hover:text-gray-900 hover:bg-gray-900 hover:shadow-none" href="#">
                         
                         <svg class="h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
                         
@@ -98,7 +98,7 @@
                 </div>
                 <div id="whats_app_telefon">
                     <p>Whats App </p>
-                    1 222 444 44 33
+                    <span class="text-gray-900 dark:text-white">1 222 444 44 33</span>
                 </div>
             </div>
         </section>

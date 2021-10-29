@@ -17,19 +17,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         }
 
     h1 {
-        @apply mb-6 text-3xl md:text-4xl font-headline font-bold text-maincolor ;
+        @apply mb-6 text-3xl md:text-4xl font-headline font-bold text-maincolor dark:text-blue-100 ;
     }
     h2 {
-        @apply mb-3 text-xl md:text-2xl  font-semibold text-maincolor ;
+        @apply mb-3 text-xl md:text-2xl  font-semibold text-maincolor dark:text-blue-100 ;
     }
     h3 {
-        @apply mb-2 text-xl md:text-2xl font-semibold text-maincolor ;
+        @apply mb-2 text-xl md:text-2xl font-semibold text-maincolor dark:text-blue-100;
     }
     p {
-        @apply text-lg ;
+        @apply text-lg dark:text-blue-300;
     }
     li{
-        @apply mb-2 text-lg ;
+        @apply mb-2 text-lg dark:text-blue-300;
     }
    
 }
