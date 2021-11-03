@@ -37,10 +37,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     .btn-icon {
         @apply flex items-center;
     }
-    .btn-light-blue {
-        @apply bg-blue-200 hover:text-blue-800;
-    }
     .btn-blue {
-        @apply bg-blue-600 hover:text-blue-800;
+        @apply dark:bg-yellow-200  dark:hover:bg-yellow-400 bg-blue-200 hover:bg-blue-400;
     }
+   
 }
